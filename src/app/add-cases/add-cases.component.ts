@@ -72,7 +72,8 @@ export class AddCasesComponent implements OnInit {
         country:this.casesForm.value.country,
         status:this.casesForm.value.status
       }).then(()=>{
-        this.router.navigate(['/cases']);
+        //this.router.navigate(['/cases']);
+        this.isLoadingResults = false;
       });
   }
 
