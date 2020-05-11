@@ -8,11 +8,11 @@
       <a mat-flat-button color="primary" [routerLink]="['/cases']"><mat-icon>list</mat-icon></a>
     </div>
     <div class="button-row">
-      <mat-button-toggle-group name="status" aria-label="Status" [(ngModel)]="label" (ngModelChange)="changeStatus()">
-        <mat-button-toggle value="All">All</mat-button-toggle>
-        <mat-button-toggle value="Positive">Positive</mat-button-toggle>
-        <mat-button-toggle value="Dead">Dead</mat-button-toggle>
-        <mat-button-toggle value="Recovered">Recovered</mat-button-toggle>
+      <mat-button-toggle-group name="status"  aria-label="Status" [(ngModel)]="label" (ngModelChange)="changeStatus()">
+        <mat-button-toggle value="Positive" class="toggle">Positive</mat-button-toggle>
+        <mat-button-toggle value="Dead" class="toggle">Dead</mat-button-toggle>
+        <mat-button-toggle value="Recovered" class="toggle">Recovered</mat-button-toggle>
+        <mat-button-toggle value="All" class="toggle">All</mat-button-toggle>
       </mat-button-toggle-group>
     </div>
     <div style="display: block;">
