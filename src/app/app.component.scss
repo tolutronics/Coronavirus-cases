@@ -1,5 +1,11 @@
 .container {
-    padding: 20px;
+  padding-top: 20px;
+    margin-top: 50px;
+    
+  }
+
+  .header{
+    font-size: 10px;
   }
   .example-fill-remaining-space {
     flex: 1 1 auto;
@@ -7,4 +13,17 @@
   .example-icon {
     padding: 0 14px;
     float:right;
+  } 
+
+  .mat-toolbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    color: #ffffff;
+  }
+
+  .mat-toolbar span{
+    font-size: 30px;
   }
